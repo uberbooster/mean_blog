@@ -22,13 +22,13 @@
       return $http.post(baseUrl, userObj);
     };
     function getOneUserF(userId){
-
+      return $http.get(baseUrl + userId);
     };
     function updateUserF(userId, updateInfo){
-
+      return $http.put(baseUrl + userId, updateInfo);
     };
     function deleteUserF(userId){
-
+      return $http.delete(baseUrl + userId);
     };
 
   };
