@@ -24,8 +24,8 @@
     function getOneUserF(userId){
       return $http.get(baseUrl + userId);
     };
-    function updateUserF(userId, updateInfo){
-      return $http.put(baseUrl + userId, updateInfo);
+    function updateUserF(userId, updateUserInfo){
+      return $http.put(baseUrl + userId, updateUserInfo);
     };
     function deleteUserF(userId){
       return $http.delete(baseUrl + userId);
