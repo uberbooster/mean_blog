@@ -18,17 +18,17 @@
     function getAllPostsF(){
       return $http.get(baseUrl);
     };
-    function createPostF(userObj){
-      return $http.post(baseUrl, userObj);
+    function createPostF(postObj){
+      return $http.post(baseUrl, postObj);
     };
-    function getOnePostF(userId){
-      return $http.get(baseUrl + userId);
+    function getOnePostF(postId){
+      return $http.get(baseUrl + postId);
     };
-    function updatePostF(userId, updateInfo){
-      return $http.put(baseUrl + userId, updateInfo);
+    function updatePostF(postId, updatePostInfo){
+      return $http.put(baseUrl + postId, updatePostInfo);
     };
-    function deletePostF(userId){
-      return $http.delete(baseUrl + userId);
+    function deletePostF(postId){
+      return $http.delete(baseUrl + postId);
     };
 
   };
